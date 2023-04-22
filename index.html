@@ -4,13 +4,43 @@
     <title>Index Codify</title>
   </head>
   <body>
-    <h1>This is Dev Katleho</h1>
-    <button onclick="showAlert()">Click me</button>
+    <h1>Add numbers</h1>
+
+    <input type="number" id="input1"> + <input type="number" id="input2">
+
+    <button onclick="addTwoNumbers()">Add</button>
+
+    <!-- <button onclick="getInput1()">Show input 1</button>
+
+    <button onclick="getInput2()">Show input 2</button> -->
 
     <script>
-      function showAlert() {
-        alert("Index Codify!");
-      }
+        
+        function getInput1(){
+            let input1Value = document.getElementById("input1").value
+
+            alert(input1Value)
+        }
+
+        function getInput2(){
+            let input2Value = document.getElementById("input2").value
+
+            alert(input2Value)
+        }
+
+
+        function addTwoNumbers() {
+            let input1 = document.getElementById("input1").value
+            let input2 = document.getElementById("input2").value
+
+            let input1Converted = Number(input1)
+            let input2Converted = Number(input2)
+
+            let result = input1Converted + input2Converted
+            
+            alert(result);
+        }
+
     </script>
   </body>
 </html>
